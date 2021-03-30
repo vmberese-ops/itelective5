@@ -12,7 +12,7 @@ class Header extends StatelessWidget {
           width: 200,
           child: Text(
             title,
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.start,
           ),
         ),
         SizedBox(
