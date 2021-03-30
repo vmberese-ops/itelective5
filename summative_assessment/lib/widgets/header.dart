@@ -6,7 +6,9 @@ class Header extends StatelessWidget {
   const Header({Key key, this.title}) : super(key: key);
 
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Container(
           width: 200,
@@ -14,9 +16,6 @@ class Header extends StatelessWidget {
             title,
             textAlign: TextAlign.start,
           ),
-        ),
-        SizedBox(
-          width: 120,
         ),
         InkWell(
           onTap: () => Scaffold.of(context).openEndDrawer(),
